@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask
+from flask import Flask  # type: ignore[import-not-found]
 
 app = Flask(__name__)
 
