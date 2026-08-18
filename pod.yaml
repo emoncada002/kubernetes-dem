@@ -1,0 +1,11 @@
+apiVersion: v1 
+kind: Pod 
+metadata: 
+name: kubernetes-demo 
+labels: 
+app: kubernetes-demo 
+spec: 
+containers: - name: app 
+image: kubernetes-demo:1.0 
+imagePullPolicy: IfNotPresent 
+ports: - containerPort: 5000 
